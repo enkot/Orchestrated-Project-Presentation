@@ -1,6 +1,6 @@
 ---
 theme: zhozhoba
-title: "How I Orchestrated a Full-Stack Laravel & Vue Project via AI"
+title: "How I Orchestrated Laravel & Vue Project via AI"
 info: |
   ## AI-Orchestrated Laravel & Vue
   with Near-Zero Bugs
@@ -11,11 +11,11 @@ drawings:
   persist: false
 ---
 
-# How I Orchestrated a Full-Stack<br/>Laravel & Vue Project via AI
+# <span class="shimmer-text">How I Orchestrated Laravel & Vue Project via AI</span>
 
 <div v-motion :initial="{ y: 40, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 400 } }">
 
-## <span v-mark.highlight.yellow="1">with Near-Zero Bugs</span>
+## <span v-mark.highlight.yellow="1" class="text-dark">with Near-Zero Bugs</span>
 
 </div>
 
@@ -23,31 +23,40 @@ drawings:
   Making AI your <strong>most disciplined</strong> team member
 </div>
 
+<!-- floating emoji particles -->
+
+<span class="float-particle" style="left: 5%; --dur: 7s; --delay: 0s;">🤖</span>
+<span class="float-particle" style="left: 20%; --dur: 5s; --delay: 1.2s;">🚀</span>
+<span class="float-particle" style="left: 40%; --dur: 8s; --delay: 0.5s;">⚡</span>
+<span class="float-particle" style="left: 60%; --dur: 6s; --delay: 2s;">🧠</span>
+<span class="float-particle" style="left: 75%; --dur: 7s; --delay: 0.8s;">💎</span>
+<span class="float-particle" style="left: 90%; --dur: 5.5s; --delay: 1.5s;">✨</span>
+
 ---
 
 # The Stack
 
 <div class="grid grid-cols-4 gap-10 mt-8">
-  <div v-click class="flex flex-col items-center gap-2">
+  <div v-click v-motion :initial="{ y: -80, opacity: 0, scale: 0 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 250, damping: 12 } }" class="flex flex-col items-center gap-2">
     <logos-laravel class="text-5xl" />
     <div class="font-bold">Laravel 12</div>
   </div>
-  <div v-click class="flex flex-col items-center gap-2">
+  <div v-click v-motion :initial="{ y: -80, opacity: 0, scale: 0 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 250, damping: 12, delay: 100 } }" class="flex flex-col items-center gap-2">
     <logos-vue class="text-5xl" />
     <div class="font-bold">Vue 3</div>
   </div>
-  <div v-click class="flex flex-col items-center gap-2">
-    <simple-icons-inertia class="text-5xl" />
+  <div v-click v-motion :initial="{ y: -80, opacity: 0, scale: 0 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 250, damping: 12, delay: 200 } }" class="flex flex-col items-center gap-2">
+    <simple-icons-inertia class="text-5xl text-blue-500" />
     <div class="font-bold">Inertia v2</div>
   </div>
-  <div v-click class="flex flex-col items-center gap-2">
-    <logos-tailwindcss-icon class="text-5xl" />
-    <div class="font-bold">Tailwind v4</div>
+  <div v-click v-motion :initial="{ y: -80, opacity: 0, scale: 0 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 250, damping: 12, delay: 300 } }" class="flex flex-col items-center gap-2">
+    <simple-icons-unocss class="text-5xl" />
+    <div class="font-bold">UnoCSS</div>
   </div>
 </div>
 
 <div v-click class="mt-10 text-sm opacity-50">
-  + Sail + Pest 4 + Wayfinder + shadcn-vue + Reverb + Horizon
+  + Sail + Pest 4 + Wayfinder + shadcn-vue + Reverb
 </div>
 
 ---
@@ -57,21 +66,36 @@ drawings:
 <v-clicks>
 
 - <span v-mark.strike-through.red="1">Inconsistent code</span> - different patterns every time
-- <span v-mark.strike-through.red="2">Wrong versions</span> - suggests Laravel 9 APIs
+- <span v-mark.strike-through.red="2">Wrong versions</span> - suggests Laravel 9 and Tailwind APIs
 - <span v-mark.strike-through.red="3">Style drift</span> - every component looks different
 - <span v-mark.strike-through.red="4">Skips tests</span> - "ship it" energy
 
 </v-clicks>
 
-<div v-click v-motion :initial="{ scale: 0.9, opacity: 0 }" :enter="{ scale: 1, opacity: 1 }">
-<div class="mt-8 px-8 py-4 bg-red-500/10 border border-red-500/30 rounded-lg text-center text-lg">
-  Without guardrails, AI is a <span v-mark.box.red="6">junior dev who never reads the docs</span>.
+<div v-click v-motion :initial="{ x: -100, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { type: 'spring', stiffness: 200, damping: 10 } }">
+<div class="mt-8 px-8 py-4 bg-red-500/10 border border-red-500/30 rounded-lg text-center text-lg shake-it pulse-glow" style="--tw-shadow-color: rgba(239,68,68,0.3)">
+  🚨 Without guardrails, AI is a <span v-mark.box.red="6">junior dev who never reads the docs</span>.
 </div>
 </div>
 
 ---
 
-# The Fix
+```yaml
+transition: fade
+```
+
+<div class="flex flex-col items-center justify-center h-full">
+  <div v-motion :initial="{ scale: 0.3, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, damping: 8 } }" class="text-4xl font-black text-center">
+    🫣 How to fix it?
+    </div>
+    <div v-motion v-click :initial="{ scale: 0.3, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, damping: 8 } }" class="text-6xl font-black text-center mt-8">
+    Your AI teammate needs skills! 🤹🏼‍♂️
+  </div>
+</div>
+
+---
+
+# 🥋 Our Neo needs:
 
 <div class="grid grid-cols-2 gap-6">
 <div>
@@ -92,28 +116,17 @@ drawings:
 </v-clicks>
 
 </div>
-<div v-click>
+<div v-click class="-ml-10">
 
-```mermaid {scale: 0.55}
+```mermaid {scale: 0.8  }
 graph LR
-    subgraph before ["🤯 Before"]
-        direction TB
-        GPT["🤖 GPT"] -->|Laravel 9?| X1["❌"]
-        Claude["🤖 Claude"] -->|Options API?| X2["❌"]
-        Gemini["🤖 Gemini"] -->|raw SQL?| X3["❌"]
-    end
-    subgraph after ["😎 After"]
-        direction TB
-        A["📖 AGENTS.md"] --> GPT2["🤖 GPT"]
-        A --> Claude2["🤖 Claude"]
-        A --> Gemini2["🤖 Gemini"]
-        GPT2 & Claude2 & Gemini2 --> Y["✅ Same Code"]
-    end
-    style before fill:transparent,stroke:#e00
-    style after fill:transparent
-    style X1 fill:#e00,stroke:#e00,color:#fff
-    style X2 fill:#e00,stroke:#e00,color:#fff
-    style X3 fill:#e00,stroke:#e00,color:#fff
+
+    A["📖 AGENTS.md"] --> GPT2["🤖 GPT"]
+    A --> Claude2["🤖 Claude"]
+    A --> Gemini2["🤖 Gemini"]
+    GPT2 & Claude2 & Gemini2 --> Y["✅ Same Code"]
+
+
     style Y fill:#0070f3,stroke:#0070f3,color:#fff
     style A fill:#000,stroke:#333,color:#fff
 ```
@@ -123,10 +136,12 @@ graph LR
 
 ---
 
-# AGENTS.md + Version Pinning
+# 📍 Version Pinning
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
+
+#### AGENTS.md
 
 ```md {all|5-8|10-12|14-16}{lines:true}
 === foundation rules ===
@@ -140,7 +155,7 @@ graph LR
 
 ## Skills Activation
 
-- wayfinder, pest-testing
+- unocss, vue, inertia
 
 ## Conventions
 
@@ -149,72 +164,197 @@ graph LR
 
 <div v-click class="mt-2 text-sm">
 
-Same file: `AGENTS.md` = `CLAUDE.md` = `GEMINI.md`<br/>
-<span v-mark.highlight.yellow>One rulebook, all AIs</span>
+<span v-mark.highlight.yellow class="text-dark">Same file: </span> `AGENTS.md` = `CLAUDE.md` = `GEMINI.md`<br/>
 
 </div>
 
 </div>
 <div>
 
-<v-switch>
-<template #1>
+#### With and without pinning
 
-### Without pinning
-
+````md magic-move {lines: true}
 ```php
-// AI generates Laravel 10 code
+// AI generates Laravel 10 code ❌
+
 protected $casts = [
     'email_verified_at' => 'datetime',
 ];
-```
 
-```php
 // Kernel.php (removed in L11!)
 class Kernel extends HttpKernel {
     protected $middleware = [...];
 }
 ```
 
-</template>
-<template #2>
-
-### With pinning
-
 ```php
-// AI generates Laravel 12 code
+// AI generates Laravel 12 code ✅
+
 protected function casts(): array
 {
     return [
         'email_verified_at' => 'datetime',
     ];
 }
-```
 
-```php
 // bootstrap/app.php
 Application::configure()
     ->withMiddleware(function ($m) {
         $m->web(append: [...]);
     });
 ```
-
-</template>
-</v-switch>
+````
 
 </div>
 </div>
 
 ---
 
-# Skills = Auto-Activating Experts
+# 🔒 UnoCSS Style Lock
 
-```md {all|2|3|4}
+<div class="grid grid-cols-2 gap-6 mt-2">
+<div>
+
+```ts {all|6-9|10-19}
+// uno.config.ts
+import { defineConfig, presetWind, presetIcons } from "unocss";
+
+export default defineConfig({
+  presets: [presetWind(), presetIcons()],
+  shortcuts: {
+    "btn-primary": "btn bg-primary text-white",
+    "card-base": "rounded-lg b bg-card p-6",
+  },
+  blocklist: [
+    /^border$/,
+    /^flex-grow$/,
+    [
+      new RegExp(`^shadow-(?!(?:${keys(theme.boxShadow)}|\\$)).+$`),
+      {
+        message: `only design system shadow values are allowed.`,
+      },
+    ],
+  ],
+});
+```
+
+</div>
+<div>
+
+<v-clicks>
+
+- Shortcuts — reusable token combos
+- Enforce short aliases: `border` -> `b`, `flex-grow` -> `grow`
+- Allow shadow utilities only from the design system
+- LLM naturally converges on one team style
+
+</v-clicks>
+
+<div v-click class="mt-4 text-sm opacity-70">
+Docs: <a href="https://unocss.dev/guide/extracting#blocklist" target="_blank">unocss.dev/guide/extracting#blocklist</a>
+</div>
+
+<div v-click class="mt-4">
+
+```html
+<!-- blocked by policy -->
+<div class="border flex-grow shadow-2xl">Card</div>
+```
+
+```html
+<!-- project style -->
+<div class="b grow shadow-card">Card</div>
+```
+
+</div>
+
+</div>
+</div>
+
+---
+
+# 📄 UnoCSS Skill Example
+
+<div class="grid grid-cols-2 gap-6 mt-2">
+<div>
+
+```md {all|10-14|16-20}{maxHeight:'410px'}
+## // .agents/skills/unocss/SKILL.md
+
+name: unocss
+description: Enforce one project-wide UnoCSS dialect.
+
+---
+
+# UnoCSS
+
+## Preferences
+
+- Prefer shortcuts first (`btn-primary`, `card-base`)
+- Prefer short aliases: `b` over `border`, `grow` over `flex-grow`
+- Use design-system shadows only (`shadow-card`, `shadow-popover`)
+
+## Guardrails
+
+- Block verbose aliases (`border`, `flex-grow`)
+- Reject `shadow-*` values outside `theme.boxShadow`
+- If style repeats, add a shortcut instead of raw utilities
+
+## Workflow
+
+1. Check sibling files for existing style patterns
+2. Reuse shortcuts/tokens before writing raw classes
+3. Keep class strings short and semantic
+```
+
+</div>
+<div>
+
+```ts {all}
+// uno.config.ts
+blocklist: [
+  /^border$/,
+  /^flex-grow$/,
+  [
+    new RegExp(`^shadow-(?!(?:${keys(theme.boxShadow)}|\\$)).+$`),
+    {
+      message: `only design system shadow values are allowed.`,
+    },
+  ],
+];
+```
+
+<div v-click class="mt-4">
+
+```html
+<!-- not allowed -->
+<div class="border flex-grow shadow-2xl">Card</div>
+```
+
+```html
+<!-- expected output style -->
+<div class="b grow shadow-card">Card</div>
+```
+
+</div>
+
+</div>
+</div>
+
+---
+
+```yaml
+transition: fade
+```
+
+# 🧑‍💻 Skills = Auto-Activating Experts
+
+```md {all|3|4|5}
 ## Skills Activation
 
-- wayfinder -> typed routes in frontend
-- pest-testing -> writing tests, TDD
-- UnoCSS -> any styling work
+- unocss -> utility conventions + shortcuts
+- vue -> component patterns + composition api
+- inertia -> page flow + forms + routing
 ```
 
 <div v-click class="mt-4">
@@ -223,7 +363,7 @@ Application::configure()
 flowchart LR
     A['Add a data table'] --> B["AGENTS.md"]
     B --> C{"Domains?"}
-    C --> D["UnoCSS"] & E["vue"] & F["inertia"]
+    C --> D["unocss"] & E["vue"] & F["inertia"]
     D & E & F --> G["Load SKILL.md"]
     G --> H[`Generate
     + Test
@@ -241,111 +381,128 @@ Each skill = a SKILL.md with patterns + dos and donts
 
 ---
 
-# Consistent UnoCSS
-
-<div class="grid grid-cols-2 gap-6 mt-2">
-<div>
-
-```ts {all|2-3|8-10|12-16}
-// uno.config.ts
-import { defineConfig, presetWind, presetIcons } from "unocss";
-
-export default defineConfig({
-  presets: [
-    presetWind(),
-    presetIcons({
-      scale: 1.2,
-      collections: { lucide: () => import("...") },
-    }),
-  ],
-  shortcuts: {
-    btn: "px-4 py-2 rounded-md font-medium",
-    "btn-primary": "btn bg-primary text-white",
-    "card-base": "rounded-lg border bg-card p-6",
-  },
-});
+```yaml
+transition: fade
 ```
 
-<div v-click class="text-sm mt-2">
-
-UnoCSS skill = <span v-mark.underline.green>style police</span>
-
+<div class="flex flex-col items-center justify-center h-full">
+  <div v-motion :initial="{ scale: 0.3, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, damping: 8 } }" class="text-4xl font-black text-center">
+    🤔 I need to setup it somehow...
+  </div>
+  <div v-click v-motion :initial="{ y: 40, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 400 } }" class="mt-8 text-8xl">
+    👇
+  </div>
 </div>
+
+---
+
+# 📦 Out of the box in VS Code
+
+<div class="grid grid-cols-2 gap-5 mt-2 items-start">
+<div>
+
+**1. Shows what skills are being used**
+
+<img
+  src="/screenshots/llm-response-prepare.png"
+  alt="VS Code agent preparing a response after searching workspace files"
+  class="-mt-4 w-full rounded-lg border border-white/15 shadow-lg scale-90"
+/>
 
 </div>
 <div>
 
-<v-clicks>
+**2. Writes with focused edits**
 
-- **Shortcuts** — reusable token combos
-- **Icons as classes** — `i-lucide-users`
-- AI uses <span v-mark.underline.green>shortcuts over raw utilities</span>
-
-</v-clicks>
-
-<div v-click class="mt-4">
-
-```html
-<!-- Without UnoCSS skill -->
-<button
-  class="px-4 py-2 rounded-md
-  font-medium bg-indigo-600 text-white
-  hover:bg-indigo-700"
->
-  Save
-</button>
-
-<!-- With UnoCSS skill -->
-<button class="btn-primary">Save</button>
-<span class="i-lucide-check" />
-```
-
-</div>
+<img
+  src="/screenshots/llm-response-write.png"
+  alt="VS Code agent writing changes to files after analysis"
+  class="-mt-4 w-full rounded-lg border border-white/15 shadow-lg scale-90"
+/>
 
 </div>
 </div>
 
 ---
 
-# The Real App
+```yaml
+transition: fade
+```
 
-<v-clicks>
-
-- **40+ Vue components** - one style
-- **AppShell + Sidebar** wrappers
-- **shadcn-vue** everywhere
-- **All AI-generated**
-
-</v-clicks>
-
-<div v-click class="mt-6 text-xs opacity-50">
-Built with AI. In production. Real users.
+<div class="flex flex-col items-center justify-center h-full">
+  <div v-motion :initial="{ scale: 0.3, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, damping: 8 } }" class="text-4xl font-black text-center">
+    😆 Vibe-coded app in prod?
+    </div>
+    <div v-motion v-click :initial="{ scale: 0.3, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, damping: 8 } }" class="text-6xl font-black text-center mt-8">
+    Yes! and it works great 🤌
+  </div>
 </div>
 
 ---
 
-# LLM Builds Full Pages
+```yaml
+transition: slide-up
+```
+
+<div class="">
+
+<div v-motion :initial="{ y: 24, opacity: 0 }" :enter="{ y: 0, opacity: 1 }">
+  <img
+    src="/screenshots/dashbord.png"
+    alt="Dashboard view of the production app"
+    class="w-full max-h-[270px] object-cover rounded-xl border border-white/15 shadow-lg object-top"
+  />
+</div>
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+  <div v-click>
+    <img
+      src="/screenshots/list.png"
+      alt="List page view in the production app"
+      class="w-full max-h-[200px] object-cover rounded-xl border border-white/15 shadow-lg object-top"
+    />
+  </div>
+  <div v-click>
+    <img
+      src="/screenshots/form.png"
+      alt="Form page view in the production app"
+      class="w-full max-h-[200px] object-cover rounded-xl border border-white/15 shadow-lg object-top"
+    />
+  </div>
+</div>
+
+</div>
+
+---
+
+```yaml
+transition: slide-left
+```
+
+# 🧩 Full Pages Were Built by AI
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
 
 **You say:**
 
-> "Create a dashboard with user stats"
+> Build Order Investigations index page.
 
 <div v-click class="mt-2">
 
-**AI knows the building blocks:**
+**LLM maps to known blocks:**
 
 ```
-@/components/ui/
-├── card/        ← CardHeader, CardTitle...
-├── button/      ← variants: default, outline
-├── badge/       ← status indicators
-├── table/       ← data display
-├── dialog/      ← modals
-├── sidebar/     ← navigation
-└── 40+ more...
+layouts/
+└── AppLayout.vue
+
+components/ui/
+├── input/       ← search field
+├── select/      ← status filter
+├── table/       ← list + actions
+├── badge/       ← status pill
+├── button/      ← import/export
+└── pagination/  ← result pages
 ```
 
 </div>
@@ -353,29 +510,26 @@ Built with AI. In production. Real users.
 </div>
 <div v-click>
 
-**AI generates:**
+**LLM generates:**
 
 ```vue
 <script setup lang="ts">
 import AppLayout from "@/layouts/AppLayout.vue";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { useForm } from "@inertiajs/vue3";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const props = defineProps<{
-  stats: { users: number; active: number };
+  table: TablePayload;
 }>();
+
+const form = useForm({ ...props.filters });
 </script>
 
 <template>
   <AppLayout :breadcrumbs="breadcrumbs">
-    <div class="grid grid-cols-3 gap-4 p-4">
-      <Card>
-        <CardHeader>
-          <CardTitle>Users</CardTitle>
-          <!-- ... -->
-        </CardHeader>
-      </Card>
+    <div class="grid gap-4 p-4 md:grid-cols-3">
+      <!-- cards + filters + table -->
     </div>
   </AppLayout>
 </template>
@@ -386,48 +540,40 @@ const props = defineProps<{
 
 ---
 
-# Why It Works Without You
+```yaml
+transition: slide-left
+```
 
-<v-clicks>
-
-- **AppLayout** wraps every page — sidebar, header, breadcrumbs
-- **`@/components/ui/*`** — 43 primitives, all pre-styled
-- AI <span v-mark.underline.green>checks siblings</span> — copies real page patterns
-- **Typed props** — TypeScript catches misuse instantly
-- Skills enforce: Composition API + Inertia `useForm()` + Wayfinder routes
-
-</v-clicks>
-
-<div v-click v-motion :initial="{ y: 20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }">
-<div class="mt-4 px-6 py-3 bg-blue-500/10 border border-blue-500/30 rounded-lg text-center">
-  Prompt → <span v-mark.highlight.yellow>full page</span> → looks like the rest of the app → ship it
-</div>
-</div>
-
----
-
-# Growing the System
+# 🌱 Growing the System
 
 <div class="grid grid-cols-2 gap-6">
 <div>
 
-**Adding components:**
+**Add/create component:**
+
+```bash
+npx shadcn-vue@latest add badge
+```
 
 <v-clicks>
 
-1. **Check siblings** - match patterns
-2. **Reuse first** - search before creating
-3. **shadcn-vue** for primitives
+**Describe skill:**
 
-</v-clicks>
+```md
+For positive, negative, or status indicators, use Badge variants.
+Don't reach for raw Tailwind colors.
 
-<div v-click>
+Incorrect:
+<span className="text-emerald-600">+20.1%</span>
+<span className="text-green-500">Active</span>
+<span className="text-red-600">-3.2%</span>
 
-```bash
-npx shadcn-vue@latest add dialog
+Correct:
+<Badge variant="secondary">+20.1%</Badge>
+<Badge>Active</Badge>
 ```
 
-</div>
+</v-clicks>
 
 </div>
 <div>
@@ -438,8 +584,7 @@ npx shadcn-vue@latest add dialog
 
 ```bash
 # Community
-npx skills add antfu/skills \
-  --skill='vue-best-practices'
+npx skills add antfu/skills --skill='vue-best-practices'
 
 # Custom
 mkdir .agents/skills/my-skill
@@ -461,51 +606,31 @@ mkdir .agents/skills/my-skill
 
 ---
 
-# The Full Workflow
-
-```mermaid {scale: 0.65}
-sequenceDiagram
-    participant D as You
-    participant AI as AI
-    participant A as AGENTS.md
-    participant S as Skills
-    participant C as Codebase
-
-    D->>AI: "Add PDF export"
-    AI->>A: Read rules + versions
-    AI->>S: Activate skills
-    AI->>C: Check siblings
-    AI->>C: Generate + Test + Format
-    AI-->>D: Done!
+```yaml
+transition: slide-up
 ```
 
-<div v-click v-motion :initial="{ y: 20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }">
-<div class="mt-4 text-center">
-Rules -> Skills -> Siblings -> Generate -> Test -> Format -> <span v-mark.circle.green>Ship</span>
-</div>
-</div>
+# 🏆 Results
 
----
-
-# Results
-
-<div v-click v-motion :initial="{ scale: 0.9, opacity: 0 }" :enter="{ scale: 1, opacity: 1 }">
-<div class="px-4 py-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-<div class="grid grid-cols-3 gap-4 text-center">
-  <div>
-    <div class="text-5xl font-bold text-blue-400">3x</div>
-    <div class="text-sm opacity-60">faster delivery</div>
+<div class="grid grid-cols-3 gap-4 text-center mt-6">
+  <div v-click v-motion :initial="{ y: 60, opacity: 0, scale: 0.3 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 200, damping: 10 } }">
+    <div class="px-4 py-6 rounded-xl bg-blue-500/10 border border-blue-500/30 pulse-glow">
+      <div class="text-6xl font-black text-blue-400">3x</div>
+      <div class="text-sm opacity-60 mt-2">faster delivery</div>
+    </div>
   </div>
-  <div>
-    <div class="text-5xl font-bold text-blue-400">~90%</div>
-    <div class="text-sm opacity-60">first-try pass rate</div>
+  <div v-click v-motion :initial="{ y: 60, opacity: 0, scale: 0.3 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 200, damping: 10, delay: 200 } }">
+    <div class="px-4 py-6 rounded-xl bg-green-500/10 border border-green-500/30 pulse-glow">
+      <div class="text-6xl font-black text-green-400">~90%</div>
+      <div class="text-sm opacity-60 mt-2">first-try pass rate</div>
+    </div>
   </div>
-  <div>
-    <div class="text-5xl font-bold text-blue-400">0</div>
-    <div class="text-sm opacity-60">convention violations</div>
+  <div v-click v-motion :initial="{ y: 60, opacity: 0, scale: 0.3 }" :enter="{ y: 0, opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 200, damping: 10, delay: 400 } }">
+    <div class="px-4 py-6 rounded-xl bg-purple-500/10 border border-purple-500/30 pulse-glow">
+      <div class="text-6xl font-black text-purple-400">0</div>
+      <div class="text-sm opacity-60 mt-2">convention violations</div>
+    </div>
   </div>
-</div>
-</div>
 </div>
 
 <v-clicks>
@@ -513,15 +638,17 @@ Rules -> Skills -> Siblings -> Generate -> Test -> Format -> <span v-mark.circle
 - **40+ components** - one style, full CRUD
 - **Role-based permissions**, real-time via Reverb
 - **PDF, Excel, Google Sheets** exports
-- All AI-built. All production. All <span v-mark.underline.green>near-zero bugs</span>.
+- All AI-built. All production. All <span v-mark.underline.green>near-zero bugs</span>. 🎉
 
 </v-clicks>
 
 ---
 
-## layout: cover
+```yaml
+transition: slide-up
+```
 
-# Get Started
+# 🚀 Get Started
 
 <div class="mt-6 space-y-3 text-xl">
   <div v-click v-motion :initial="{ x: -40, opacity: 0 }" :enter="{ x: 0, opacity: 1 }">
@@ -552,23 +679,36 @@ Rules -> Skills -> Siblings -> Generate -> Test -> Format -> <span v-mark.circle
 
 ---
 
-## layout: cover
+```yaml
+layout: cover
+transition: fade
+```
 
-# Thank You!
+# 🎉 Thank You
 
-**Questions?**
-
-<div class="mt-6 flex gap-8 justify-center text-sm">
-  <div class="flex items-center gap-2">
-    <carbon-logo-github class="text-lg" />
-    GitHub
-  </div>
-  <div class="flex items-center gap-2">
+<div class="flex gap-8 justify-center text-sm">
+  <a href="https://sli.dev/" target="_blank" v-click v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 100 } }" class="flex items-center gap-2">
     <carbon-document class="text-lg" />
     sli.dev
+  </a>
+  <div v-click v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 200 } }" class="flex items-center gap-2">
+    <carbon-user class="text-lg" />
+    Enkot (Taras Batenkov)
   </div>
-  <div class="flex items-center gap-2">
-    <carbon-book class="text-lg" />
-    laravel.com
-  </div>
+  <a href="https://github.com/enkot" target="_blank" v-click v-motion :initial="{ y: 30, opacity: 0 }" :enter="{ y: 0, opacity: 1 }" class="flex items-center gap-2">
+    <carbon-logo-github class="text-lg" />
+    GitHub
+  </a>
 </div>
+
+<!-- confetti -->
+
+<span class="confetti" style="left: 10%; --dur: 2.5s; --delay: 0.3s; background: #0070f3;"></span>
+<span class="confetti" style="left: 25%; --dur: 3s; --delay: 0.6s; background: #22c55e;"></span>
+<span class="confetti" style="left: 40%; --dur: 2.8s; --delay: 0.1s; background: #eab308;"></span>
+<span class="confetti" style="left: 55%; --dur: 3.2s; --delay: 0.8s; background: #ef4444;"></span>
+<span class="confetti" style="left: 70%; --dur: 2.6s; --delay: 0.4s; background: #8b5cf6;"></span>
+<span class="confetti" style="left: 85%; --dur: 3s; --delay: 0.9s; background: #06b6d4;"></span>
+<span class="confetti" style="left: 15%; --dur: 3.5s; --delay: 1.2s; background: #f97316;"></span>
+<span class="confetti" style="left: 50%; --dur: 2.3s; --delay: 0.5s; background: #ec4899;"></span>
+<span class="confetti" style="left: 75%; --dur: 2.9s; --delay: 1s; background: #14b8a6;"></span>
