@@ -673,6 +673,26 @@ transition: slide-up
   </div>
 </div>
 
+<div v-click class="mt-8">
+  <div class="text-base opacity-75">
+    Also, there are ready-to-use skills for:
+  </div>
+  <div class="mt-3 flex flex-wrap items-center gap-3">
+    <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 bg-white/5">
+      <img src="/logos/nuxt.svg" alt="Nuxt" class="h-6 w-auto" />
+      <span class="text-sm opacity-85">Nuxt</span>
+    </div>
+    <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 bg-white/5">
+      <img src="/logos/vueuse.svg" alt="VueUse" class="h-6 w-auto" />
+      <span class="text-sm opacity-85">VueUse</span>
+    </div>
+    <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 bg-white/5">
+      <img src="/logos/reka-ui.svg" alt="RekaUI" class="h-6 w-auto" />
+      <span class="text-sm opacity-85">RekaUI</span>
+    </div>
+  </div>
+</div>
+
 <div v-click v-motion :initial="{ scale: 0.8, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { delay: 200 } }" class="mt-10 text-sm opacity-60">
   Your AI just got <span v-mark.circle.green>disciplined</span>.
 </div>
