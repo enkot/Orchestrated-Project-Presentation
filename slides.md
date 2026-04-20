@@ -11,7 +11,7 @@ drawings:
   persist: false
 ---
 
-# <span class="shimmer-text">How I Orchestrated Laravel & Vue Project via AI</span>
+# <span class="shimmer-text">How I Orchestrated Laravel & Vue Project via LLM</span>
 
 <div v-motion :initial="{ y: 40, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 400 } }">
 
@@ -61,14 +61,15 @@ drawings:
 
 ---
 
-# The Problem
+# 🚩 The Problem
 
 <v-clicks>
 
-- <span v-mark.strike-through.red="1">Inconsistent code</span> - different patterns every time
-- <span v-mark.strike-through.red="2">Wrong versions</span> - suggests Laravel 9 and Tailwind APIs
-- <span v-mark.strike-through.red="3">Style drift</span> - every component looks different
-- <span v-mark.strike-through.red="4">Skips tests</span> - "ship it" energy
+- <span class="shimmer-text-danger">Inconsistent code</span> - different patterns every time
+- <span class="shimmer-text-danger">Wrong versions</span> - suggests Laravel 9 and Tailwind APIs
+- <span class="shimmer-text-danger">Style drift</span> - every component looks different
+- <span class="shimmer-text-danger">Skips tests</span> - "ship it" energy
+- <span class="shimmer-text-danger">Reinventing the wheel</span> - custom-built layers over vendor-provided APIs
 
 </v-clicks>
 
