@@ -66,7 +66,7 @@ drawings:
 <v-clicks>
 
 - <span class="shimmer-text-danger">Inconsistent code</span> - different patterns every time
-- <span class="shimmer-text-danger">Wrong versions</span> - suggests Laravel 9 and Tailwind APIs
+- <span class="shimmer-text-danger">Wrong versions/tools</span> - suggests Laravel 9 and Tailwind APIs
 - <span class="shimmer-text-danger">Style drift</span> - every component looks different
 - <span class="shimmer-text-danger">Skips tests</span> - "ship it" energy
 - <span class="shimmer-text-danger">Reinventing the wheel</span> - custom-built layers over vendor-provided APIs
