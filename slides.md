@@ -273,7 +273,7 @@ Docs: <a href="https://unocss.dev/guide/extracting#blocklist" target="_blank">un
 
 ---
 
-# 📄 UnoCSS Skill Example
+# 📄 Skill Example
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
