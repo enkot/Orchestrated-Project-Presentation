@@ -396,7 +396,7 @@ transition: fade
 
 ---
 
-# 📦 Out of the box in VS Code
+# 📦 VSCode ready to go
 
 <div class="grid grid-cols-2 gap-5 mt-2 items-start">
 <div>
@@ -479,7 +479,7 @@ transition: slide-up
 transition: slide-left
 ```
 
-# 🧩 Full Pages Were Built by AI
+# 🧩 Pages Built by AI
 
 <div class="grid grid-cols-2 gap-6 mt-2">
 <div>
